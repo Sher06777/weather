@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'DM Serif Display', serif;
+}
+
+body {
+    background: url(./components/img/peristokuchevye-scaled.jpg);
+    background-size: auto;
+    background-position: left;
+    animation: slideBackground 60s linear infinite;
+}
+
+@keyframes slideBackground {
+    0% {
+        background-position: 0;
+    }
+    50% {
+        background-position: 100% 0;
+    }
+
+    100%{
+        background-position: 0;
+    }
+}
+
+
+.App {
+    width: 400px;
+    margin: 150px auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    text-transform: capitalize
+}
+
+button {
+    width: 20%;
+    padding: 10px;
+}
